@@ -12,8 +12,9 @@ module Players
       if board.cells.size == 0 
         if board.valid_move?("5")
           "5"
-        end 
-        elsif board.taken?("5")
+        end
+      end 
+      if board.taken?("5")
           move = ["1", "3", "7", "9"].sample
           if board.valid_move?(move)
             move
