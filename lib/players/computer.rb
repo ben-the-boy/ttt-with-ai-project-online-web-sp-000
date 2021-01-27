@@ -15,7 +15,7 @@ module Players
         end
       end 
       if board.taken?("5")
-          move = ["1", "3", "7", "9"].sample
+        move = ["1", "3", "7", "9"].sample
           if board.valid_move?(move)
             move
           end 
