@@ -20,9 +20,9 @@ module Players
             return move
           end 
           else 
-            new_move = valid_moves.sample
-            if board.valid_move?(new_move)
-              new_move 
+            valid_moves.each do |move|
+            if board.valid_move?(move)
+              move  
             end
       end
     end 
