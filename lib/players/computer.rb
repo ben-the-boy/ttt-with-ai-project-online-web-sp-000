@@ -3,7 +3,7 @@ module Players
     
     def move(board)
       valid_moves = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-      corners = 
+      corners = ["1", "3", "7", "9"]
       #move = valid_moves.sample
       #  if board.valid_move?(move)
       #    valid_moves = valid_moves.delete(move)
@@ -14,10 +14,9 @@ module Players
         return "5"
       end 
       if board.taken?("5")
-        valid_moves = ["1", "3", "7", "9"]
-          valid_moves.each do |move|
+          corners.each do |move|
             if board.valid_move?(move)
-              move
+              return move
             end
           end 
           else 
