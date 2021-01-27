@@ -9,15 +9,15 @@ module Players
       #    valid_moves
       #    move  
       #  end
-      if board.cells.size == 0 
-        if board.valid_move?("5")
-        end
-        "5"
+      if board == Board.new  
+        return "5"
       end 
       if board.taken?("5")
-        move = ["1", "3", "7", "9"].sample
-          if board.valid_move?(move)
-            return move
+        new_valid_moves = ["1", "3", "7", "9"]
+          new_valid_moves.each do |move|
+            if board.valid_move?(move)
+              move
+            end
           end 
           else 
             valid_moves.each do |move|
