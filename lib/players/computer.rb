@@ -22,7 +22,7 @@ module Players
           else 
             valid_moves.each do |move|
             if board.valid_move?(move)
-              move  
+              return move  
             end
           end 
       end
