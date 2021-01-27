@@ -10,8 +10,8 @@ module Players
       #    valid_moves
       #    move  
       #  end
-      if !board.taken?("5")
-        return "5"
+      if board.valid_move?("5")
+        "5"
       end 
       if board.taken?("5")
           corners.each do |move|
