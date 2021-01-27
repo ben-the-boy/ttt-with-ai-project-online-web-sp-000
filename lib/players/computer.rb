@@ -17,12 +17,12 @@ module Players
       if board.taken?("5")
         move = ["1", "3", "7", "9"].sample
           if board.valid_move?(move)
-            move
+            return move
           end 
           else 
-            move = valid_moves.sample
-            if board.valid_move?(move)
-              move 
+            new_move = valid_moves.sample
+            if board.valid_move?(new_move)
+              new_move 
             end
       end
     end 
