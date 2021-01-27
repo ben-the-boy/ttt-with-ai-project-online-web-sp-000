@@ -11,19 +11,21 @@ module Players
       #    move  
       #  end
       if board.valid_move?("5")
-        "5"
+        return "5"
       end 
       if board.taken?("5")
           corners.each do |move|
             if board.valid_move?(move)
               return move
             end
+            return move 
           end 
           else 
             valid_moves.each do |move|
             if board.valid_move?(move)
               return move  
             end
+            return move 
           end 
       end
     end 
