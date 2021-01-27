@@ -24,6 +24,7 @@ module Players
             if board.valid_move?(move)
               move  
             end
+          end 
       end
     end 
             
