@@ -10,7 +10,7 @@ module Players
       #    valid_moves
       #    move  
       #  end
-      if board == Board.new  
+      if !board.taken?("5")
         return "5"
       end 
       if board.taken?("5")
