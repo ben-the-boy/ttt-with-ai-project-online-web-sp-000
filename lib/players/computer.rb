@@ -16,16 +16,16 @@ module Players
       if board.taken?("5")
           corners.each do |move|
             if board.valid_move?(move)
-              return move
+              move
             end
-            return move 
+            move 
           end 
           else 
             valid_moves.each do |move|
             if board.valid_move?(move)
-              return move  
+              move  
             end
-            return move 
+            move 
           end 
       end
     end 
