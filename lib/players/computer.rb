@@ -8,7 +8,7 @@ module Players
         if board.valid_move?(move)
           valid_moves = valid_moves.delete(move)
         end
-        move 
+      move 
     end 
 
   end 
