@@ -10,6 +10,7 @@ module Players
           valid_moves
           move  
         end
+    end 
 
   end 
 end 
