@@ -7,8 +7,6 @@ module Players
       move = valid_moves.sample
         if board.valid_move?(move)
           valid_moves = valid_moves.delete(move)
-          valid_moves
-          move  
         end
         move 
     end 
